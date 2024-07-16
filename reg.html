@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<script>
+function send()
+{
+var name,email,address;
+var name=document.getElementById('t1').value;
+localStorage.setItem("name",name);
+var email=document.getElementById('t2').value;
+localStorage.setItem("email",email);
+var address=document.getElementById('t3').value;
+localStorage.setItem("address",address);
+}
+</script>
+<body>
+<form name="registration"  method="post"  action="details.html">
+<lable>name</label>
+<input type="text"  Id="t1"><br><BR>
+<lable>Email</lable>
+<input type="text"  Id="t2"><br><BR>
+<lable>Address</lable><br>
+<input type="text"  Id="t3"><br><BR>
+<input type="submit" onclick="send()">
+<input type="reset">
+</form>
+</body>
+</html>
